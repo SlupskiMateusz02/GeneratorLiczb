@@ -16,7 +16,7 @@ func wczytajDane() -> String
 // generowanie liczby losowej
 func wygenerujLiczbe() -> Int
 {
-    let liczbaLosowa = Int.random(in: 0...100)
+    let liczbaLosowa = Int.random(in: 1...100)
     return liczbaLosowa
 }
 
@@ -39,7 +39,7 @@ func zgadnijLiczbe()
         guard let guess = Int(input), guess > 0 else
         {
             print("Podano błędne dane!")
-            return
+            continue
         }
         
         // sprwadzenie typu użytkownika
